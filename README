@@ -29,6 +29,7 @@ How to use it?
 6. Call the proxy servlet using the following url:
 
 									"/com.sap.proxy_datafetch/sapservlet?url=<THE URL FROM WHERE YOU WANT TO SEND/RECEIVE DATA>"
+
 Future Plans:
 =============
 
