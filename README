@@ -1,0 +1,37 @@
+Proxy Servlet
+
+I wrote a small Proxy Servlet which developers can use to solve the CORS issue which they may face while sharing data from/to different domains via AJAX.
+
+Key Features:
+=============
+
+1. Solves the AJAX CORS(Cross Origin Resource Sharing) issue.
+
+2. Supports both HTTP, HTTPS
+
+3. Easy to install & run -- Get started in minutes
+
+How to use it?
+==============
+
+1. Download the full source code from Github
+
+2. Add all the external JAR files(check the directory "external_files" in source) to build path.
+
+3. Add all the JAR files to WEB-INF/lib.
+
+4. If Username/Password authentication is required, go to Line 53 in datafetch.java & enter your username & password. This may be changed in later versions & parameters may be used for receiving Username/Password from User. The initial version only supports this.
+
+4. Download Apache Tomcat.
+
+5. Host the proxy servlet along with your app.
+
+6. Call the proxy servlet using the following url:
+
+									"/com.sap.proxy_datafetch/sapservlet?url=<THE URL FROM WHERE YOU WANT TO SEND/RECEIVE DATA>"
+Future Plans:
+=============
+
+To support all other HTTP methods like POST,PUT etc.
+
+Using web.xml Servlet Mapping
